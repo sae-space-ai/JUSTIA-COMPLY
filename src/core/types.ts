@@ -26,6 +26,7 @@ export type RuleOperator =
 
 export interface Tenant {
   id: string;
+  tenantId: string; // self-referencing for store compatibility
   name: string;
   createdAt: string;
   active: boolean;
